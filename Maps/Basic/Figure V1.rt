@@ -1,0 +1,34 @@
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~Figure V1~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+[header]
+	xscreen : 600
+	yscreen : 400
+	object : 1
+	light : 2
+	camera : 1
+	ambiant : 0x7F007F
+	bounce : 1
+[camera:1]
+	origin : {0.5 0 -1}
+	direction : {0 0 1}
+[light:1]
+	origin : {0 -5 0}
+	distance : 5
+	intensity : 1
+	color : 0xFFFFFF
+[light:1]
+	origin : {0 5 0}
+	distance : 5
+	intensity : 1
+	color : 0xFFFFFF
+[object:plan]
+	origin : {1 4.7 0}
+	direction : {0 -1 0}
+	color : 0xffffff
+			id_texture : 255
+			texture : 255
+			opacity : 0
+			ns : 1

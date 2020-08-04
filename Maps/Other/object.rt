@@ -1,0 +1,137 @@
+#############################################
+#           Scene 42 : Object               #
+#############################################
+[header]
+	ambiant : 0x7c33c7
+	xscreen : 1000
+	yscreen : 1000
+	refresh : 1
+	quality : 3
+	bounce : 0
+	camera : 1
+	object : 56
+	light : 0
+	flag_hud : 0
+	generate : 3
+############### Light ##################
+[light:1]
+	origin : {0.0 -25.0 -25.0}
+	color : 0xFFFFFF
+	distance : 100
+	intensity : 1
+	spot : 0
+	ang : 0.7
+############### Camera ##################
+[camera:1]
+	origin : {0 -20 -50.0}
+	direction : {0 0 1}
+	mode : 0
+############### Object ##################
+[object:sphere]
+	origin : {0 0 0}
+	color : 0x7F7F7F
+	rayon : 3
+			isub : 2
+			sub : 1
+			ns : 1
+			dist : {0 0 0}
+[object:obj]
+	origin : {20 -3 10}
+	color : 0xFF03fc9d
+	size : 5
+[object:sphere]
+	origin : {0.0 -5.0 0.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	rayon : 2.0
+[object:plan]
+	color : 0xffffff
+	origin : {0.0 0.0 0.0}
+	direction : {0 -1 0}
+			reflection : 12
+[object:cylinder]
+	color : 0xFF03fc9d
+	origin : {-20.0 -10.0 10.0}
+	direction : {0 1 0}
+	hauteur : 10
+	rayon : 5
+	mode : 0
+[object:cylinder]
+	origin : {-27.0 -15.0 0.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	hauteur : 10
+	mode : 1
+	rayon : 5
+[object:cylinder]
+	origin : {-30.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	hauteur : -1
+	mode : 0
+	rayon : 5
+[object:cone]
+	origin : {-10.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : 1
+	angle : 45
+	hauteur : -1
+[object:cone]
+	origin : {-0.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : -1
+	angle : 45
+	hauteur : -1
+[object:cone]
+	origin : {10.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : 0
+	angle : 45
+	hauteur : -1
+[object:cone]
+	origin : {20.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : 0
+	angle : 45
+	hauteur : 10
+[object:cone]
+	origin : {30.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : 1
+	angle : 45
+	hauteur : 10
+[object:cone]
+	origin : {40.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : -1
+	angle : 45
+	hauteur : 10
+[gen:torus]
+	origin : {0 -5 0}
+	nb : 20
+	rayon_i : 2
+	rayon : 0.99
+	axe : 0
+	color : 0xFF03fc9d
+			reflection : 255
+[object:cone]
+	origin : {40.0 -20.0 15.0}
+	direction : {0 1 0}
+	color : 0xFF03fc9d
+	side : -1
+	angle : 45
+	hauteur : 10
+[gen:torus]
+	origin : {0 -5 0}
+	nb : 20
+	rayon_i : 2
+	rayon : 0.99
+	axe : 1
+	color : 0xFF03fc9d
+			reflection : 255

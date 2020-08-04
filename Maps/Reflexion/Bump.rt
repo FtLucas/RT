@@ -1,0 +1,78 @@
+#########################################################
+#														#
+#				Bump.Rt									#
+#														#
+#########################################################
+[header]
+	xscreen : 1000
+	yscreen : 1000
+	camera : 1
+	quality : 0
+	aa : 0
+	bounce : 20
+	object : 10
+	light : 2
+	nb_normal : 1
+	nb_texture : 2
+	normal : "./texture/normal/rock.tga"
+	textures : "./texture/texture/pont.tga"
+	textures : "./texture/planet/stars.tga"
+############################ Light #####################
+[light:1]
+	origin : {0 0 -0.5}
+	direction : {0 0 1}
+	color : 0xFFFFFF
+	distance : 100
+	intensity : 1
+[light:1]
+	origin : {0.5 0 1}
+	color : 0xFFFFFF
+	distance : 100
+	intensity : 1
+############################ Camera ####################
+[camera:1]
+	origin : {0 0 -0.5}
+	direction : {0 0 1}
+############################ Object ####################
+[object:plan]
+	origin : {0 0 3}
+	direction : {0 0 -1}
+	color : 0x7F7F7F
+			reflection : 255
+[object:plan]
+	origin : {0 0 -1}
+	direction : {0 0 1}
+	color : 0x7F7F7F
+			reflection : 255
+[object:plan]
+	origin : {1 0 0}
+	direction : {-1 0 0}
+	color : 0x7F7F7F
+			texture : 255
+			normal : 255
+[object:plan]
+	origin : {-1 0 0}
+	direction : {1 0 0}
+	color : 0x7F7F7F
+			texture : 255
+			normal : 255
+[object:plan]
+	origin : {0 0.5 0}
+	direction : {0 -1 0}
+	color : 0x7F7F7F
+			reflection : 255
+			normal : 255
+[object:plan]
+	origin : {0 -0.5 0}
+	direction : {0 1 0}
+	color : 0x7F7F7F
+			reflection : 255
+			normal : 255
+[object:sphere]
+	origin : {0 0 0.4}
+	direction : {0 1 0}
+	color : 0xFF00FF
+	rayon : 0.1
+			id_refraction : 0.7
+			refraction : 255
+			normal : 255
